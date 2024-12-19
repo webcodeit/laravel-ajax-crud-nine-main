@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "633546f7-3c43-4bd7-9cbb-9e9cd7ee3e2c",
+		"name": "ajax-crude",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33921282",
+		"_collection_link": "https://blue-resonance-827769.postman.co/workspace/PodUp-Local~050bff75-c88c-4ad5-8519-10bcce2821a2/collection/33921282-633546f7-3c43-4bd7-9cbb-9e9cd7ee3e2c?action=share&source=collection_link&creator=33921282"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "raad",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "dsdsd",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "32244",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "hobbies[]",
+							"value": "Bike",
+							"type": "text"
+						},
+						{
+							"key": "profile_file",
+							"type": "file",
+							"src": "/C:/Users/asus/Downloads/dummy-pdf_2 (2).pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
